@@ -23,7 +23,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <p className="font-bold text-center text-[1vw] sm:text-[8px]"><span className=' text-red-600'>QAUTION:</span>We don’t give you the result you want, but the result you need.</p>
+            <p className="font-bold text-center text-[1vw] sm:text-[8px]"><span className=' text-red-600'>QAUTION:</span> We don’t give you the result you want, but the result you need.</p>
           </div>
         </div>
       </main>
