@@ -48,9 +48,9 @@ export default function About() {
                 <p className="text-[#9ac3ff] text-[2.2vw] text-center pb-10 sm:pb-0 font-bold mt-20">Follow Us for Latest Updates</p>
             </motion.div>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 2 }} className='flex flex-wrap justify-center h-28 mb-36 my-20 sm:mt-2'>
-                <img className=' h-[100%] sm:h-20 mx-10 cursor-pointer' onClick={() => router.push('https://t.me/+46DhWjOrw-5jZThl')} src="\telegram-logo-2.svg" alt="" />
-                <img className=' h-[100%] sm:h-20 mx-10 cursor-pointer' onClick={() => router.push('https://twitter.com/?lang=en')} src="\x-logo-2.svg" alt="" />
-                <img className=' h-[100%] sm:h-20 mx-10 cursor-pointer' onClick={() => router.push('https://discord.gg/zvaVZJmz53')} src="\discord-logo-2.svg" alt="" />
+                <img className=' h-[100%] sm:h-20 mx-10 cursor-pointer' onClick={() => window.open('https://t.me/+46DhWjOrw-5jZThl', '_ blank')} src="\telegram-logo-2.svg" alt="" />
+                <img className=' h-[100%] sm:h-20 mx-10 cursor-pointer' onClick={() => window.open('https://x.com/googleLayer2', '_ blank')} src="\x-logo-2.svg" alt="" />
+                <img className=' h-[100%] sm:h-20 mx-10 cursor-pointer' onClick={() => window.open('https://discord.gg/zvaVZJmz53', '_ blank')} src="\discord-logo-2.svg" alt="" />
             </motion.div>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 2 }} className='pb-28'>
                 <p className="text-white text-[4vw] py-4 text-center font-bold">This is going to be huge...</p>
