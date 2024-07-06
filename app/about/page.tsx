@@ -45,7 +45,7 @@ const AboutPage = () => {
           <div className="flex flex-col justify-center md:justify-start  md:flex-row gap-4 items-center">
             <Link href="/">
               <Image
-                src={"/assets/images/logo.svg"}
+                src={"/assets/images/logo.png"}
                 alt="logo"
                 className="w-[100px] h-auto"
                 width={1000}

@@ -35,7 +35,6 @@ const neueRegrade = localFont({
 export const metadata: Metadata = {
   title: "Goolol",
   description: "An app by dexifier",
-  icons: "/assets/icons/favicon.ico",
 };
 
 export default function RootLayout({
