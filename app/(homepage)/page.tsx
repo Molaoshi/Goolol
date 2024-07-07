@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-
 const Home = () => {
   const [value, setValue] = useState<string>("");
   const navigate = useRouter();
@@ -11,37 +10,37 @@ const Home = () => {
     setValue(e.target.value);
   };
   return (
-    <main className="relative flex min-h-screen flex-col p-4 pb-[8rem] md:pb-4 items-center justify-center bg-center md:bg-[url(/assets/images/bg.png)] bg-cover bg-no-repeat ">
+    <main className="relative flex h-[100svh] flex-col p-4 pb-[8rem] md:pb-4 items-center justify-center bg-center bg-[url(/assets/images/paper-bg.png)] bg-cover bg-no-repeat ">
       <Image
-        className="absolute top-0 left-0 w-full h-full z-[-1]"
+        className="hidden md:block absolute top-0 left-0 w-full h-full z-[0]"
         height={1000}
         width={1000}
-        src={"/assets/images/paper-bg.png"}
+        src={"/assets/images/bg.png"}
         alt="paper bg"
       />
       <Image
-        className="block md:hidden absolute object-contain top-0 left-0 w-full h-auto z-[-1]"
+        className="block md:hidden absolute object-contain top-0 left-0 w-full h-auto z-[0]"
         height={1000}
         width={1000}
         src={"/assets/images/mobile-bg-top.png"}
         alt="paper bg"
       />
       <Image
-        className="block md:hidden absolute object-contain bottom-0 left-0 w-full h-auto z-[-1]"
+        className="block md:hidden absolute object-contain bottom-0 left-0 w-full h-auto z-[0]"
         height={1000}
         width={1000}
         src={"/assets/images/mobile-bg-bottom.png"}
         alt="paper bg"
       />
       <Image
-        src={"/assets/images/logo.svg"}
+        src={"/assets/images/logo.png"}
         alt="logo"
         className="w-[176px] md:w-[326px] h-auto"
         width={1000}
         height={1000}
       />
 
-      <div className="mt-8 w-full max-w-[46rem] h-[44px] md:h-[4.0625rem] flex items-center gap-1 border border-[#D9D9D9] rounded-full bg-white">
+      <div className="relative z-1 mt-8 w-full max-w-[46rem] h-[44px] md:h-[4.0625rem] flex items-center gap-1 border border-[#D9D9D9] rounded-full bg-white">
         <form
           onSubmit={(e) => {
             e.preventDefault();
