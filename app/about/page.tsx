@@ -187,7 +187,7 @@ const AboutPage = () => {
           </div>
           <div className="question" ref={addToRefs}>
             <h2 className="text-2xl font-bold mt-10 text-link text-center md:text-start">
-              Mid July
+              Mid August
             </h2>
             <p className="mt-4 text-center md:text-start">
               Launch will be on Solana (a Layer 1) because we couldn’t decide if
